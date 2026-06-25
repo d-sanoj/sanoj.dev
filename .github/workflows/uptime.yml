@@ -14,13 +14,23 @@ jobs:
     steps:
       - name: Check website
         run: |
-          curl \
-            --fail \
+          status_code="$(curl \
             --location \
             --silent \
             --show-error \
             --max-time 30 \
             --retry 2 \
             --retry-delay 5 \
+            --user-agent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36" \
+            --header "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" \
+            --header "Accept-Language: en-US,en;q=0.9" \
+            --write-out "%{http_code}" \
             https://sanoj.dev/ \
-            --output /dev/null
+            --output /tmp/portfolio-home.html)"
+
+          echo "HTTP status: ${status_code}"
+
+          if [ "${status_code}" -lt 200 ] || [ "${status_code}" -ge 400 ]; then
+            echo "Portfolio uptime check failed."
+            exit 1
+          fi
