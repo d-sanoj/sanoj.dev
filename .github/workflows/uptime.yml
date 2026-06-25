@@ -1,0 +1,26 @@
+name: Portfolio uptime check
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  uptime:
+    name: Check portfolio uptime
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    steps:
+      - name: Check website
+        run: |
+          curl \
+            --fail \
+            --location \
+            --silent \
+            --show-error \
+            --max-time 30 \
+            --retry 2 \
+            --retry-delay 5 \
+            https://sanoj.dev/ \
+            --output /dev/null
