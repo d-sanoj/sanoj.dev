@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Sanoj, focused on practical AI, data systems, retrieval, and analytics work."
+    />
+    <title>Sanoj | AI Engineer</title>
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      if (window.location.hash) {
+        history.replaceState(null, "", window.location.pathname + window.location.search);
+      }
+      const savedTheme = localStorage.getItem("theme");
+      const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = savedTheme || (systemDark ? "dark" : "light");
+      window.scrollTo(0, 0);
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="ink-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#top" aria-label="Sanoj home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/icon/icon.png" alt="" />
+        </span>
+        <span>Sanoj</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#work" data-nav="work">Projects</a>
+        <a href="#contact" data-nav="contact">Get in touch</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span aria-hidden="true"></span>
+        </button>
+        <a class="header-cta" href="https://github.com/d-sanoj" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy" data-reveal>
+          <h1>Smart Data Foundations. Purposeful AI System.</h1>
+          <p class="hero-lede">
+            I build systems that make raw information easier to search, understand, and act on.
+            My work is mostly around retrieval, local AI, text processing, analytics dashboards,
+            and data workflows. The macOS apps are side projects where I explore product ideas and
+            interface craft.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio actions">
+            <a class="button primary" href="#work">View selected work</a>
+            <a class="button secondary" href="https://github.com/d-sanoj" target="_blank" rel="noreferrer">
+              Open GitHub profile
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-card" data-reveal>
+          <div class="portrait-stack">
+            <div class="avatar-frame">
+              <img
+                src="assets/sanoj-github-avatar.png"
+                alt="GitHub avatar for Sanoj"
+              />
+            </div>
+          </div>
+          <div class="terminal-card" aria-label="Developer profile summary">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="mono">$ whoami</p>
+            <h2>Sanoj</h2>
+            <p>"Encode your legacy in bits and bytes."</p>
+            <div class="terminal-tags">
+              <span>AI + Data</span>
+              <span>Retrieval</span>
+              <span>Analytics</span>
+              <span>NLP</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="marquee-band" aria-label="Focus areas">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span>Generative AI</span>
+            <span>LLMs</span>
+            <span>SLMs</span>
+            <span>Natural Language Processing</span>
+            <span>Text Processing</span>
+            <span>Text Mining</span>
+            <span>Data Science</span>
+            <span>Machine Learning</span>
+            <span>Data Analytics</span>
+            <span>Prediction</span>
+            <span>AI systems</span>
+            <span>AI Agents</span>
+            <span>Retrieval-Augmented Generation</span>
+            <span>Prompt Engineering</span>
+            <span>Context Engineering</span>
+            <span>Deep Learning</span>
+            <span>Fine-Tuning</span>
+            <span>Vision</span>
+            <span>Diffusion Models</span>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <span>Generative AI</span>
+            <span>LLMs</span>
+            <span>SLMs</span>
+            <span>Natural Language Processing</span>
+            <span>Text Processing</span>
+            <span>Text Mining</span>
+            <span>Data Science</span>
+            <span>Machine Learning</span>
+            <span>Data Analytics</span>
+            <span>Prediction</span>
+            <span>AI systems</span>
+            <span>AI Agents</span>
+            <span>Retrieval-Augmented Generation</span>
+            <span>Prompt Engineering</span>
+            <span>Context Engineering</span>
+            <span>Deep Learning</span>
+            <span>Fine-Tuning</span>
+            <span>Vision</span>
+            <span>Diffusion Models</span>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <span>Generative AI</span>
+            <span>LLMs</span>
+            <span>SLMs</span>
+            <span>Natural Language Processing</span>
+            <span>Text Processing</span>
+            <span>Text Mining</span>
+            <span>Data Science</span>
+            <span>Machine Learning</span>
+            <span>Data Analytics</span>
+            <span>Prediction</span>
+            <span>AI systems</span>
+            <span>AI Agents</span>
+            <span>Retrieval-Augmented Generation</span>
+            <span>Prompt Engineering</span>
+            <span>Context Engineering</span>
+            <span>Deep Learning</span>
+            <span>Fine-Tuning</span>
+            <span>Vision</span>
+            <span>Diffusion Models</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell intro-grid">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">What I work on</p>
+          <h2>AI and data projects that turn messy inputs into useful outputs.</h2>
+        </div>
+        <div class="capability-grid">
+          <article data-reveal>
+            <span class="capability-index">01</span>
+            <h3>Retrieval</h3>
+            <p>Search and memory systems that help software bring back the right context at the right time.</p>
+          </article>
+          <article data-reveal>
+            <span class="capability-index">02</span>
+            <h3>Text and NLP</h3>
+            <p>Projects around classification, redaction, unredaction, document cleanup, and structured extraction.</p>
+          </article>
+          <article data-reveal>
+            <span class="capability-index">03</span>
+            <h3>Analytics</h3>
+            <p>Dashboards and pipelines that make patterns visible without forcing people to dig through raw files.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell work-section" id="work">
+        <div class="section-heading wide" data-reveal>
+          <p class="eyebrow">Selected work</p>
+          <h2>AI, data, ML, NLP, macOS, and dashboard projects from my public GitHub.</h2>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card featured" data-reveal>
+            <span class="project-number">01</span>
+            <div>
+              <p class="project-kicker">AI / Personal data</p>
+              <h3>FinAgent</h3>
+              <p>
+                A personal finance assistant that turns bank activity into a conversational
+                workflow. FinAgent connects through Telegram, reads spending and balance data,
+                and lets someone ask natural questions instead of manually sorting through
+                transactions across multiple apps.
+              </p>
+            </div>
+            <div class="project-meta">
+              <span>Local AI</span>
+              <span>Finance data</span>
+              <span>Plain English</span>
+            </div>
+            <p class="project-outcome">Focus: private, practical answers for everyday financial questions, with local-first AI when privacy matters and hosted models when speed matters.</p>
+            <a href="https://github.com/d-sanoj/FinAgent" target="_blank" rel="noreferrer">View repository</a>
+          </article>
+
+          <article class="project-card featured" data-reveal>
+            <span class="project-number">02</span>
+            <div>
+              <p class="project-kicker">Data / Research</p>
+              <h3>EpigCorpus</h3>
+              <p>
+                A reproducible research pipeline for Latin epigraphy. It pulls inscription data
+                into a cleaner working corpus, prepares normalized text variants, and makes the
+                material easier to inspect through exports and an interactive Roman Empire map.
+              </p>
+            </div>
+            <div class="project-meta">
+              <span>Corpus</span>
+              <span>Text cleaning</span>
+              <span>Research</span>
+            </div>
+            <p class="project-outcome">Focus: turn fragmented historical records into a structured corpus that can be searched, mapped, validated, and reused for analysis.</p>
+            <a href="https://github.com/d-sanoj/EpigCorpus" target="_blank" rel="noreferrer">View repository</a>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <span class="project-number">03</span>
+            <div>
+              <p class="project-kicker">ML / Classification</p>
+              <h3>Cuisine Predictor</h3>
+              <p>
+                A machine learning classification project built around ingredient lists. The
+                workflow treats recipes as text-like feature sets, transforms ingredients into
+                model-ready signals, and predicts the cuisine category from those patterns.
+              </p>
+            </div>
+            <div class="project-meta">
+              <span>Classification</span>
+              <span>Features</span>
+              <span>Food data</span>
+            </div>
+            <p class="project-outcome">Focus: show the full ML loop clearly, from feature preparation and training to evaluating how well ingredient signals explain cuisine labels.</p>
+            <a href="https://github.com/d-sanoj/Cuisine-Predictor" target="_blank" rel="noreferrer">View repository</a>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <span class="project-number">04</span>
+            <div>
+              <p class="project-kicker">Side / macOS</p>
+              <h3>Mac Apps</h3>
+              <p>
+                A collection of native macOS product experiments. MacMail explores Gmail and
+                Calendar workflows, MacUtils gathers desktop helpers, Pomo Duck turns focus
+                sessions into a playful utility, and QTI Converter handles assessment-format
+                conversion for education workflows.
+              </p>
+            </div>
+            <div class="project-meta">
+              <span>macOS</span>
+              <span>Utilities</span>
+              <span>Product craft</span>
+            </div>
+            <p class="project-outcome">Focus: fast native workflows, thoughtful desktop interactions, and small tools that feel sharp enough to use every day.</p>
+            <div class="project-links">
+              <a href="https://github.com/d-sanoj/MacMail" target="_blank" rel="noreferrer">MacMail</a>
+              <a href="https://github.com/d-sanoj/MacUtils" target="_blank" rel="noreferrer">MacUtils</a>
+              <a href="https://github.com/d-sanoj/pomo-duck" target="_blank" rel="noreferrer">Pomo Duck</a>
+              <a href="https://github.com/d-sanoj?tab=repositories&q=qti" target="_blank" rel="noreferrer">QTI Converter</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <span class="project-number">05</span>
+            <div>
+              <p class="project-kicker">ML / Text modeling</p>
+              <h3>The Unredactor</h3>
+              <p>
+                A text modeling project that studies whether surrounding context can recover
+                redacted names. It cleans the corpus, converts text into features, trains
+                predictive models, and compares results with accuracy, precision, recall, and F1.
+              </p>
+            </div>
+            <div class="project-meta">
+              <span>NLP</span>
+              <span>Modeling</span>
+              <span>Evaluation</span>
+            </div>
+            <p class="project-outcome">Focus: make the modeling process transparent, from data cleanup and feature engineering to measurable prediction quality.</p>
+            <a href="https://github.com/d-sanoj/The-Unredactor" target="_blank" rel="noreferrer">View repository</a>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <span class="project-number">06</span>
+            <div>
+              <p class="project-kicker">NLP / Redaction</p>
+              <h3>The Redactor</h3>
+              <p>
+                The practical counterpart to the unredaction project: a text-processing utility
+                for detecting sensitive content and producing safer versions of documents. It
+                focuses on privacy, cleanup, and making text easier to share without exposing
+                details that should stay hidden.
+              </p>
+            </div>
+            <div class="project-meta">
+              <span>NLP</span>
+              <span>Privacy</span>
+              <span>Text cleanup</span>
+            </div>
+            <p class="project-outcome">Focus: identify sensitive language, redact it consistently, and support safer document handling for downstream workflows.</p>
+            <a href="https://github.com/d-sanoj?tab=repositories&q=redactor" target="_blank" rel="noreferrer">Find repository</a>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <span class="project-number">07</span>
+            <div>
+              <p class="project-kicker">Data / Dashboards</p>
+              <h3>Analytics Dashboards</h3>
+              <p>
+                A group of BI and spreadsheet dashboard projects covering bank loans, UK road
+                accidents, and Netflix catalog data. Each project turns raw records into KPI
+                surfaces with filters, trend views, summary cards, and visual breakdowns.
+              </p>
+            </div>
+            <div class="project-meta">
+              <span>Power BI</span>
+              <span>Excel</span>
+              <span>KPIs</span>
+            </div>
+            <p class="project-outcome">Focus: make dense datasets scannable, comparable, and useful for decisions through clear metrics and interactive reporting surfaces.</p>
+            <div class="project-links">
+              <a href="https://github.com/d-sanoj/Bank-Loan-Analysis" target="_blank" rel="noreferrer">Bank Loan</a>
+              <a href="https://github.com/d-sanoj/UK-Road-Accidents-Dashboard" target="_blank" rel="noreferrer">Road Accidents</a>
+              <a href="https://github.com/d-sanoj/Netflix-Dashboard" target="_blank" rel="noreferrer">Netflix</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section" id="contact" data-reveal>
+        <p class="eyebrow">Get in touch</p>
+        <h2>Interested in practical AI or data work?</h2>
+        <p>
+          I am most interested in projects where AI and data need to become something usable:
+          search, extraction, dashboards, document workflows, classification, or local assistants.
+        </p>
+        <div class="contact-actions">
+          <a class="button primary" href="https://github.com/d-sanoj" target="_blank" rel="noreferrer">Connect on GitHub</a>
+          <a class="button secondary" href="https://github.com/d-sanoj?tab=repositories" target="_blank" rel="noreferrer">
+            Browse repositories
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Sanoj</span>
+      <span>Encode your legacy in bits and bytes.</span>
+    </footer>
+
+    <script src="fluid-cursor.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
